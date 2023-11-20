@@ -6,7 +6,7 @@ weight = 68;
 let height
 height = 1.7;
 
-BBMI = weight / (height * height)
+MI = weight / (height * height)
 
 console.log(BMI);
 
