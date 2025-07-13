@@ -1,0 +1,100 @@
+/* 要素のデフォルトmarginをリセット */
+h1, p, body {
+    margin: 0;
+}
+
+/* フォントサイズの設定 */
+p, a {
+    font-size: 20px;
+}
+
+/* header要素のスタイル */
+header {
+    margin-bottom: 20px;
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+
+/* h1要素のスタイル */
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+/* main要素のスタイル */
+main {
+    padding: 10px;
+}
+
+/* id名parentの要素のスタイル */
+#parent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* class名contentsの要素のスタイル */
+.contents {
+    border: 3px solid rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* h2要素のスタイル */
+h2 {
+    font-size: 25px;
+    border-bottom: 3px dotted rgb(236, 122, 122);
+}
+
+h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
+}
+
+/* class名contents内の二番目のp要素の最初の文字のスタイル */
+.contents p:nth-of-type(2)::first-letter {
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+}
+
+/* class名contents内のimg要素のスタイル */
+.contents img {
+    margin: 10px 0;
+    width: 70%;
+}
+
+/* footer要素のスタイル */
+footer {
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+
+/* footer内のa要素のスタイル */
+footer a {
+    color: rgb(255, 255, 255);
+}
+
+/* 訪問済みリンクのスタイル */
+footer a:visited {
+    color: rgb(193, 234, 251);
+}
+
+/* マウスホバー時のスタイル */
+footer a:hover {
+    color: rgb(245, 178, 168);
+}
+
+/* レスポンシブ対応 - 画面幅768px以下 */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+    
+    p {
+        font-size: 25px;
+    }
+    
+    #parent {
+        flex-direction: column;
+    }
+}
